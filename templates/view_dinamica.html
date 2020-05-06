@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Página dinâmica</title>
+        <link rel="stylesheet" href="/static/style/style.css">
+	</head>
+	<body>
+        <h2>{{title | upper}}</h2>
+        <ul>
+            {% for elemento in lista %}
+                <li>{{elemento}}</li>
+            {% else %}
+                <p>Lista vazia</p>
+            {% endfor %}
+        </ul>
+	</body>
+</html>
